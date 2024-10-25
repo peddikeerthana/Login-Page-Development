@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Authentication</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+        
+        <div class="container">
+            <img class="image" src="https://tse3.mm.bing.net/th?id=OIP.lkVN1WDlcV2jQCq-9LT7-wHaIJ&pid=Api&P=0&h=180"/>
+            <h1>WELCOME</h1>
+            <div id="loginForm" class="form">
+                <h2>Login</h2>
+                <input type="email" id="loginEmail" placeholder="Email">
+                <input type="password" id="loginPassword" placeholder="Password">
+                <button onclick="login()">Login</button>
+                <p id="loginError" class="error hidden"></p>
+                <p id="registerLink">Don't have an account? <a href="#" onclick="toggleForm()">Register here</a></p>
+            </div>
+            <div id="registerForm" class="form hidden">
+                <h2>Register</h2>
+                <input type="text" id="registerUsername" placeholder="Username">
+                <input type="email" id="registerEmail" placeholder="Email">
+                <input type="password" id="registerPassword" placeholder="Password">
+                <button onclick="register()">Register</button>
+                <p id="registerError" class="error hidden"></p>
+            </div>
+            <p id="loginLink" class="hidden">Already have an account? <a href="#" onclick="toggleForm()">Login here</a></p>
+        </div>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
